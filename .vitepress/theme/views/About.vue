@@ -4,16 +4,16 @@
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
       <!-- 介绍 -->
       <div class="about-item hello">
-        <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 無名</span>
-        <span class="text3">是一名 前端开发工程师、独立开发者、博主</span>
+        <span class="text1">你好，很高兴认识你</span>
+        <span class="text2 title2">我是 xlaserhsy</span>
+        <span class="text3">是一名 OIer</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
         <span class="tip">追求</span>
         <span class="title2">源于</span>
         <span class="title2">热爱而去开发</span>
-        <span class="title2">优秀的作品</span>
+        <span class="title2">有趣的作品</span>
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
