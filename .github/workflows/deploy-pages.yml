@@ -1,0 +1,3 @@
+ REPO_URL: "xlaserhsy/xlaserhsy.github.io"
+ BUILD_PATH: ".vitepress/dist"
+ CUSTOM_DOMAIN: "xlaserhsy.github.io"
