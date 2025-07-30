@@ -49,10 +49,9 @@
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 1fr 1fr">
-        <div class="image-content">
-          <span class="tip">关注偏好</span>
-          <span class="title2">OI 算法</span>
-        </div>
+      <div class="image-content">
+        <span class="tip">关注偏好</span>
+        <span class="title2">OI 算法</span>
       </div>
       <div
         class="about-item like image"
