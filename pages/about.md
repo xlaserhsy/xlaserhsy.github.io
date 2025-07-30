@@ -1,10 +1,5 @@
 ---
 title: 关于本站
-aside: false
+aside: true
 ---
-
-<script setup>
-import About from "@/views/About.vue"
-</script>
-
-<About />
+bobow
