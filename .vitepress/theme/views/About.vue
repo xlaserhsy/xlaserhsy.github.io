@@ -44,8 +44,7 @@
           <i>無限進步</i>
         </span>
         <div class="list">
-          <span class="list-item" style="--color: #357ef5">ZZRVTC · 计算机应用技术</span>
-          <span class="list-item" style="--color: #eb372a">FE · 前端开发工程师</span>
+          <span class="list-item" style="--color: #357ef5">Oier · 信竞生</span>
         </div>
         <img
           class="career-img"
