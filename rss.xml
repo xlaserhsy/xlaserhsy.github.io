@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>xlaserhsy's Blog</title>
+        <link>https://xlaserhsy.github.io/</link>
+        <description>Hello World</description>
+        <lastBuildDate>Fri, 05 Dec 2025 04:50:56 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>xlaserhsy</generator>
+        <language>zh</language>
+        <copyright>Copyright © 2020-present xlaserhsy</copyright>
+        <item>
+            <title><![CDATA[构造（ryx）题解]]></title>
+            <link>https://xlaserhsy.github.io//posts/1000</link>
+            <guid>https://xlaserhsy.github.io//posts/1000</guid>
+            <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[无]]></description>
+            <author>114514@gmail.com (xlaserhsy)</author>
+        </item>
+    </channel>
+</rss>
