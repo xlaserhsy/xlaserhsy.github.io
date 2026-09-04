@@ -1,39 +1,34 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+```yaml
+name: Deploy
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-node_modules/
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
-test.html
-.env
-.vitepress/dist
-.vitepress/cache
-.vitepress/components.d.ts
-.vitepress/auto-imports.d.ts
-themeConfig.mjs
-!.vitepress/theme/assets/themeConfig.mjs
-
-posts/*
-!posts/2024/1010.md
-
-# Editor directories and files
-.vscode/*
-.vscode
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-.vercel
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Build
+      run: npm run build
+      
+    - name: Deploy to server
+      uses: appleboy/scp-action@v0.1.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        source: "dist/*"
+        target: "/var/www/html"
+```
