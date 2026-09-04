@@ -1,1 +1,34 @@
-Nothing needs to be added to the .gitignore file based on the provided changes. The modified files (README.md, pages/link.md, posts/2024/1010.md) are all markdown source files that should be tracked by git. There are no build artifacts, dependency directories, or temporary files in the change list that would warrant adding ignore rules.
+```yaml
+name: Deploy
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Build
+      run: npm run build
+      
+    - name: Deploy to server
+      uses: appleboy/scp-action@v0.1.0
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        source: "dist/*"
+        target: "/var/www/html"
+```
